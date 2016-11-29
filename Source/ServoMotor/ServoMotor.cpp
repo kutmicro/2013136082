@@ -21,10 +21,9 @@ void loop()
     delay(0); 
   } 
   // now scan back from 90 to 0 degrees
-  for(angle = 90; angle > 0; angle--) 
+ for(angle = 90; angle > 0; angle--) 
   { 
     servo.write(angle); 
     delay(30); 
   } 
 } 
-
