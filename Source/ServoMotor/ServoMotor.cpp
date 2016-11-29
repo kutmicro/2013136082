@@ -1,6 +1,6 @@
 #include <Servo.h> 
  
-int servoPin = 9;
+int servoPin = 2;
 
 Servo servo; 
 
@@ -14,16 +14,17 @@ void setup()
 
 void loop() 
 { 
-  // scan from 0 to 180 degrees
-  for(angle = 0; angle < 180; angle++) 
+  // scan from 0 to 90 degrees
+  for(angle = 0; angle < 90; angle++) 
   { 
     servo.write(angle); 
-    delay(15); 
+    delay(0); 
   } 
-  // now scan back from 180 to 0 degrees
-  for(angle = 180; angle > 0; angle--) 
+  // now scan back from 90 to 0 degrees
+  for(angle = 90; angle > 0; angle--) 
   { 
     servo.write(angle); 
-    delay(15); 
+    delay(30); 
   } 
 } 
+

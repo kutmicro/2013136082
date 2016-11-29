@@ -1,0 +1,25 @@
+BitMask 0000 0001
+
+DDRA l= 중간에 하나만 바꿀때 사용
+
+1 << 4  BitPosition 왼쪽으로 네칸.
+
+DDRA l= (1 << 4)
+
+l
+
+& 
+
+bit wise operater
+
+
+
+pinModule[3, output] 
+// 1. 라이브러리 or 메크로 #define #ifdef (부품명 쉴드명 매크로) a(작동) #else b(작동) 함수를 호출// 
+// 2. Comile option X //3번핀의 모듈을 아웃풋하라. // 느림 // 함수꼴 // 대신 반복될때 좋다 // 루프로 돌리거나 //
+
+DDRA l= (1<<0);  // 빠름 // 즉발
+
+* Source Review // Line By Line Understanding // eps, Sensor interface // 코드를 부분부분만 실행하는 식으로 코드 기능테스트
+// 함수이름 꼭 꼭 확인. - C# class.setup A//myA(1, 2, 3); // 모르는 부분 꼭 표시해놓기, 질문하기!
+
